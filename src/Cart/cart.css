@@ -1,0 +1,149 @@
+/* carro vazio #################################################################### */
+.sale_vazio{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 92%;
+    height: 27vh;
+    margin-left: 16px;
+    background: #F5F5F5;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 2vh;
+
+}
+
+.sale_vazio h2{
+    width: 100%;
+    padding: 20px 0px 15px 21px;
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sale_vazio p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #333333;
+    margin-top: 56px;
+
+}
+
+.sale_vazio p:nth-child(3){
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #828282;
+    margin-top: 1.5px;
+
+}
+
+/* carro cheio ################################################################## */
+.sale{
+    margin-top: 2vh;
+    width: 91vw;
+    height: 72vh;
+    
+}
+
+.sale h2{
+    width: 88vw;
+    padding: 20px 0px 15px 21px;
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.sale .produtos{
+    width:100% ;
+    height:61% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+.sale .produto{
+    margin:2% 0px;
+    border: 0px;
+    width: 100%;
+    height: 24.7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sale .imagem{
+    position: relative;
+    width: 21.5%;
+    height: 100%;
+}
+
+.sale img{
+    width: 100%;
+    height: 100%;
+}
+.sale .produto h2{
+    background-color:transparent;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    width: 170px;
+    height: 30px;
+}
+
+.sale .produto p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    width: 170px;
+    height: 16px;
+
+}   
+
+.sale .add{
+    display: none;
+}
+
+
+.sale .del{
+    display:inherit;
+    position: relative;
+    width: 27px;
+    height: 18px;
+    margin-left: 230px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    background-color: transparent;
+    border: none;
+}
