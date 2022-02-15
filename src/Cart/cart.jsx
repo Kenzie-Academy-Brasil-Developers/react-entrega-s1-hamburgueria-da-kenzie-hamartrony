@@ -1,7 +1,9 @@
 import Produto from "../Product/product"
 import './cart.css'
-function Cart({sale, delCart}){
-    console.log(sale)
+
+
+function Cart({sale, precoTotal, setSale}){
+    
 
 
     return(
@@ -19,9 +21,13 @@ function Cart({sale, delCart}){
                     <div className="sale">
                         <h2>Carrinho de Compras</h2>
                         <div className="produtos">
-                            {sale.map((item) => <Produto item={item} key={item.id} delCart={delCart} button={'Remover'}/>)}
+                            {sale.map((item, index) => <Produto item={item} key={index} button={'Remover'}/>)}
                         </div>
 
+                        <div className="precoTotal">
+                        <p>Total</p> <span>{`R$ ${precoTotal.toFixed(2)}`}</span>
+                        <button onClick={() => setSale([])}>Remover Todos</button>
+                        </div>
                     </div>)
             }
         
